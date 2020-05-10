@@ -78,9 +78,10 @@ button {
 }
 
 .todo-container {
+  padding: 1rem;
   & .todo-list {
     list-style: none;
-    width: 100%;
+    // width: 100%;
     margin: 0;
     padding: 0;
     display: flex;
@@ -91,6 +92,7 @@ button {
       margin: 0.5rem;
       background: rgb(245, 245, 245);
       font-size: 1.2rem;
+      width: 100%;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -167,6 +169,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   z-index: 2;
 }
 
@@ -174,8 +177,8 @@ button {
   transform: rotateZ(360deg);
 }
 
-@media (min-width: 506px) {
+@media (min-width: 586px) {
   .todo {
-    width: 30rem;
+    width: 30rem !important;
   }
 }

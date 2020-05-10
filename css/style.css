@@ -89,9 +89,12 @@ button:hover {
   padding: 1rem;
 }
 
+.todo-container {
+  padding: 1rem;
+}
+
 .todo-container .todo-list {
   list-style: none;
-  width: 100%;
   margin: 0;
   padding: 0;
   display: -webkit-box;
@@ -113,6 +116,7 @@ button:hover {
   margin: 0.5rem;
   background: whitesmoke;
   font-size: 1.2rem;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -205,6 +209,8 @@ button:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   z-index: 2;
 }
 
@@ -213,9 +219,9 @@ button:hover {
           transform: rotateZ(360deg);
 }
 
-@media (min-width: 506px) {
+@media (min-width: 586px) {
   .todo {
-    width: 30rem;
+    width: 30rem !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
